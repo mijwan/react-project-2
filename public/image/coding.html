@@ -1,0 +1,103 @@
+
+<!-- saved from url=(0050)file:///C:/Ashish%20Projects/count/src/coding.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script>
+  var arr = [1,1,2,2,3,3,3];
+
+  var b= arr.filter(checked);
+  function checked(num){
+    return num %  3  ==0;
+      }
+      document.write(b );
+
+   document.write("<br>");
+
+   var c=b.reduce( function(sum,sub){
+     return sum+ sub;
+   });
+   document.write(c);
+
+</script></head><body>3,3,3<br>9
+<br><br>
+<script>
+   var inp = [10,20,30,40,40];
+
+   var d=inp.filter(test) ;
+     function test(abc){
+       return abc % 40 == 0;
+     }
+     document.write(d);
+     document.write("<br>");
+ var e=d.reduce(function(ab,bc){
+   return ab + bc;
+ });
+   document.write(e);
+</script>40,40<br>80
+<br><br>
+
+<script>
+  let aa= [1,3,2,5,4,7,10];
+
+  let bb = aa.filter(pass);
+  function pass(abb){
+    return abb % 2==0;
+
+  };
+    document.write (bb);
+    document.write("<br>");
+    let cc =aa.filter(bass);
+    function bass(acc){
+      return acc % 2 == 1;
+    };
+    document.write(cc);
+    document.write("<br>");
+     let dd= cc.concat(bb);
+     document.write(dd);
+</script>2,4,10<br>1,3,5,7<br>1,3,5,7,2,4,10
+
+<br><br>
+<script>
+  let arry = [1,2,3,4,7];
+
+  function find_num(arry){
+    let sum = 0;
+    for(let x in arry){
+      sum += arry[x];
+     
+    }
+    let f = arry.length +1;
+    expect = Math.floor((f*(f+1))/2);
+    return expect - sum;
+  }
+  document.write(find_num(arry));
+</script>4
+<br><br>
+
+
+<script>
+     function missing(array){
+       let missArray = [];
+
+       let minNum = Math.min(...array);
+       let maxNum = Math.max(...array);
+
+       for (let i = minNum; i<maxNum; i++){
+         if (array.indexOf(i) < 0){
+          missArray.push(i);
+         }
+       }
+       return missArray;
+     }
+     document.write(missing([1,2,2,3,4]))
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</body></html>
